@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
-//hello
+
 #define MAX_STR 101
 
 typedef struct Person{
@@ -26,11 +26,11 @@ int main(){
     scanf("%i", &N);
     person* p1 = Ctor(N);
     for(int i=0; i<N; i++){
-        printf("Write down name\n");
+        printf("Write down name of %i. person\n", i+1);
         scanf("%s", p1[i].name);
-        printf("Write down age\n");
+        printf("Write down age of %i. person\n", i+1);
         scanf("%i", &p1[i].age);
-        printf("Write down sex\n");
+        printf("Write down sex of %i. person\n", i+1);
         scanf(" %c", &p1[i].sex);
         getchar();
     }
